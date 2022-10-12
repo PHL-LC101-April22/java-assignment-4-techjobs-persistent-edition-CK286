@@ -45,7 +45,7 @@ public class HomeController {
             model.addAttribute("title", "Add Job");
             return "add";
         }
-
+     model.addAttribute("employer", employerRepository.findById(employerId));
         return "redirect:";
     }
 
